@@ -24,12 +24,13 @@ header {
 }
 
 nav {
-  background-color: #36454f;
+  background-color: #000000;
   margin: 0 auto;
   width: 100%;
 }
 nav ul {
   list-style-type: none;
+  display: flex;
 }
 nav a {
   display: block;
@@ -41,10 +42,6 @@ nav a {
 
 nav a:hover {
   text-decoration: overline;
-}
-
-nav ul {
-  display: flex;
 }
 
 nav ul li {
@@ -79,6 +76,6 @@ img {
   height: auto;
 }
 footer {
-  background-color: blue;
+  background-color: rgb(220, 235, 5);
   text-align: center;
 }
