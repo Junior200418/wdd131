@@ -7,6 +7,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  box-sizing: border-box;
+}
 
 #course-title {
   background-color: #ed0a0a;
@@ -20,7 +26,7 @@ body {
 nav {
   background-color: #36454f;
   margin: 0 auto;
-  max-width: 800px;
+  width: 100%;
 }
 nav ul {
   list-style-type: none;
