@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hawaii - State Portal</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hawaii</h1>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <picture>
+          <source srcset="images/hawaii-wide.webp" media="(min-width: 768px)" />
+          <img
+            src="images/hawaii-mobile.webp"
+            alt="`View of Hawaii islands"
+            class="hero-image"
+          />
+        </picture>
+
+        <section class="card data-card">
+          <h2>Data</h2>
+          <ul class="data-list">
+            <li>
+              <span class="label">Area:</span>
+              <span class="value">16,635 sq km</span>
+            </li>
+            <li>
+              <span class="label">Population:</span>
+              <span class="value">1,432,820</span>
+            </li>
+            <li>
+              <span class="label">Capital:</span>
+              <span class="value">Honolulu</span>
+            </li>
+            <li>
+              <span class="label">Languages:</span>
+              <span class="value">English, Hawaiian</span>
+            </li>
+            <li>
+              <span class="label">Currency:</span>
+              <span class="value">US Dollar (USD)</span>
+            </li>
+            <li>
+              <span class="label">Time Zone:</span>
+              <span class="value">HST (UTC-10)</span>
+            </li>
+            <li>
+              <span class="label">Calling Code:</span>
+              <span class="value">+1 (808)</span>
+            </li>
+            <li>
+              <span class="label">Internet TLD:</span>
+              <span class="value">.gov / .us</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card weather-card">
+          <h2 class="weather-heading">Weather</h2>
+
+          <div class="weather-icon-container">
+            <svg
+              class="weather-icon-svg"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="32" cy="24" r="12" fill="#ffb300" />
+              <path
+                d="M46 44a10 10 0 0 0-10-10 10.3 10.3 0 0 0-3 .5A12 12 0 1 0 20 44h26z"
+                fill="#b0bec5"
+              />
+              <path
+                d="M22 48a6 6 0 1 0 12 0h-12z"
+                fill="#90a4ae"
+                opacity="0.5"
+              />
+            </svg>
+          </div>
+
+          <ul class="weather-list">
+            <li>
+              <span class="label">Temperature:</span>
+              <span class="value" id="temp-value">45 °F</span>
+            </li>
+            <li>
+              <span class="label">Conditions:</span>
+              <span class="value">Partly Cloudy</span>
+            </li>
+            <li>
+              <span class="label">Wind:</span>
+              <span class="value" id="wind-value">12 mph</span>
+            </li>
+            <li>
+              <span class="label">Wind Chill:</span>
+              <span class="value" id="windchill-value">Calculating...</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="current-year"></span>🏳️‍🌈 Ugwuanyi Chineme Charles 🏳️‍🌈
+        Hawaii
+      </p>
+      <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>
