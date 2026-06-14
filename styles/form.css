@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 480px;
+  background-color: #d5d0d6;
+  border: 1px solid #bdafb0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  background-color: #310631;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+.form-header h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.review-form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group > label,
+.checkbox-group-title {
+  display: block;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #111111;
+  margin-bottom: 6px;
+}
+
+.instructions {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.optional {
+  color: #0000ff;
+  font-size: 0.85rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.rating-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.rating-label span {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.rating-label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-wrapper label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #eaeaea;
+  border: 1px solid #7c7c7c;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #dbdbdb;
+}
+
+.assignment-footer {
+  background-color: #240324;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.counter-box {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffd700;
+}
