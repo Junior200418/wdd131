@@ -17,7 +17,7 @@
 
       <form action="review.html" method="get" class="review-form">
         <div class="form-group">
-          <label prejudices for="product-name">Product Name</label>
+          <label for="product-name">Product Name</label>
           <select id="product-name" name="productName" required>
             <option value="" disabled selected>Select a Product ...</option>
           </select>
@@ -26,8 +26,8 @@
         <div class="form-group">
           <label>Overall Rating</label>
           <div class="rating-group">
-            <label class="rating-label">
-              <span>☆</span>
+            <div class="rating-item">
+              <label for="rating-1">☆</label>
               <input
                 type="radio"
                 name="overallRating"
@@ -35,9 +35,9 @@
                 value="1"
                 required
               />
-            </label>
-            <label class="rating-label">
-              <span>☆☆</span>
+            </div>
+            <div class="rating-item">
+              <label for="rating-2">☆☆</label>
               <input
                 type="radio"
                 name="overallRating"
@@ -45,9 +45,9 @@
                 value="2"
                 required
               />
-            </label>
-            <label class="rating-label">
-              <span>☆☆☆</span>
+            </div>
+            <div class="rating-item">
+              <label for="rating-3">☆☆☆</label>
               <input
                 type="radio"
                 name="overallRating"
@@ -55,9 +55,9 @@
                 value="3"
                 required
               />
-            </label>
-            <label class="rating-label">
-              <span>☆☆☆☆</span>
+            </div>
+            <div class="rating-item">
+              <label for="rating-4">☆☆☆☆</label>
               <input
                 type="radio"
                 name="overallRating"
@@ -65,9 +65,9 @@
                 value="4"
                 required
               />
-            </label>
-            <label class="rating-label">
-              <span>☆☆☆☆☆</span>
+            </div>
+            <div class="rating-item">
+              <label for="rating-5">☆☆☆☆☆</label>
               <input
                 type="radio"
                 name="overallRating"
@@ -75,10 +75,9 @@
                 value="5"
                 required
               />
-            </label>
+            </div>
           </div>
         </div>
-
         <div class="form-group">
           <label for="installation-date">Date of Installation</label>
           <input

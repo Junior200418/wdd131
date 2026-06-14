@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .form-container {
@@ -19,7 +19,6 @@ body {
   max-width: 480px;
   background-color: #d5d0d6;
   border: 1px solid #bdafb0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-header {
@@ -29,13 +28,8 @@ body {
   padding: 15px;
 }
 
-.form-header h1 {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
 .review-form {
-  padding: 20px;
+  padding: 15px;
 }
 
 .form-group {
@@ -73,7 +67,6 @@ textarea {
   border: 1px solid #a0a0a0;
   border-radius: 2px;
   font-size: 1rem;
-  background-color: #ffffff;
 }
 
 .rating-group {
@@ -83,20 +76,20 @@ textarea {
   padding: 10px 0;
 }
 
-.rating-label {
+.rating-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+}
+
+.rating-item label {
   font-size: 0.85rem;
-}
-
-.rating-label span {
-  margin-bottom: 5px;
   font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.rating-label input[type="radio"] {
+.rating-item input[type="radio"] {
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -112,12 +105,6 @@ textarea {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  cursor: pointer;
-}
-
-.checkbox-wrapper label {
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 .submit-btn {
@@ -128,11 +115,6 @@ textarea {
   background-color: #eaeaea;
   border: 1px solid #7c7c7c;
   cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.submit-btn:hover {
-  background-color: #dbdbdb;
 }
 
 .assignment-footer {
@@ -144,8 +126,18 @@ textarea {
   line-height: 1.5;
 }
 
-.counter-box {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #ffd700;
+@media screen and (min-width: 600px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  .form-container {
+    max-width: 520px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .review-form {
+    padding: 30px;
+  }
 }
