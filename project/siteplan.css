@@ -1,17 +1,11 @@
-/* ==========================================
-   Selected Color Schema & Root Variables
-   ========================================== */
 :root {
-  --primary-green: #2e6f40; /* Nature/Header Green */
-  --secondary-earth: #d9a05b; /* Accent Earth Tone */
-  --dark-text: #2b2d2f; /* High Contrast Charcoal */
-  --light-bg: #f9f8f6; /* Clean Tinted Background */
+  --primary-green: #2e6f40;
+  --secondary-earth: #d9a05b;
+  --dark-text: #2b2d2f;
+  --light-bg: #f9f8f6;
   --white: #ffffff;
 }
 
-/* ==========================================
-   Typography & Baseline Layout Styles
-   ========================================== */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -46,7 +40,6 @@ main {
   margin: 0 auto;
 }
 
-/* PARC Principle: Consistent Alignment and Proximity via Sections */
 section {
   background-color: var(--white);
   padding: 25px;
@@ -76,9 +69,6 @@ strong {
   color: var(--primary-green);
 }
 
-/* ==========================================
-   Color Palette Swatch Grid Layouts
-   ========================================== */
 .color-palette {
   display: flex;
   gap: 20px;
@@ -99,7 +89,6 @@ strong {
   height: 50px;
 }
 
-/* Dynamic Mapping to Root Colors */
 .primary-green-bg {
   background-color: var(--primary-green);
 }
@@ -115,9 +104,6 @@ strong {
   font-size: 0.9rem;
 }
 
-/* ==========================================
-   Wireframe Representation Mockups
-   ========================================== */
 .wireframe-container {
   display: block;
   margin-top: 20px;
@@ -146,7 +132,6 @@ strong {
   font-weight: bold;
 }
 
-/* Desktop Simulation Elements using Table Displays */
 .wf-row {
   display: table;
   width: 100%;
@@ -167,7 +152,6 @@ strong {
   vertical-align: middle;
 }
 
-/* Spacer Utilities inside Wireframes */
 .mobile-hero-padding {
   padding: 25px 10px;
 }
@@ -188,14 +172,11 @@ strong {
   width: 70%;
 }
 
-/* ==========================================
-   Responsive Viewport Intercepts
-   ========================================== */
 @media (max-width: 600px) {
   .wf-row,
   .wf-col {
     display: block;
-    width: 100% !important;
+    width: 100%;
     margin: 10px 0;
   }
 }

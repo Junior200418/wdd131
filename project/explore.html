@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Encounters | Fun Zoo</title>
+    <meta
+      name="description"
+      content="View and filter interactive daily animal experiences and feedings at Fun Zoo."
+    />
+    <meta name="author" content="Ugwuanyi Chineme Charles" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="siteplan.js"></script>
+    <meta
+      name="description"
+      content="This is the explore page for the Fun Zoo website."
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Animal Encounters</h1>
+      <p class="tagline">Discover Daily Interactive Schedules</p>
+    </header>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="explore.html" class="nav-link active">Explore Animals</a>
+      <a href="volunteer.html" class="nav-link">Join Us</a>
+    </nav>
+
+    <main class="content-wrapper">
+      <section class="info-card">
+        <h2>Filter Experiences By Schedule Time</h2>
+        <p>
+          Select a time window below to view the available interactive community
+          feeding setups and animal encounters.
+        </p>
+
+        <div class="filter-button-group">
+          <button id="btn-all" class="filter-btn active-filter">
+            All Encounters
+          </button>
+          <button id="btn-morning" class="filter-btn">Morning (AM)</button>
+          <button id="btn-afternoon" class="filter-btn">Afternoon (PM)</button>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <h2>Current Scheduled Highlights</h2>
+        <div id="encounters-grid" class="dynamic-card-grid"></div>
+      </section>
+
+      <section id="favorites-box" class="watchlist-card">
+        <h2>Your Saved Watchlist</h2>
+        <p>Thanks:</p>
+        <div id="favorites-output" class="watchlist-empty-state">
+          No saved watchlist entries yet.
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2026 Fun Zoo Community Hub. Crafted for educational accessibility
+        goals.
+      </p>
+    </footer>
+  </body>
+</html>

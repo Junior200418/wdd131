@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | Fun Zoo Community Hub</title>
+    <meta
+      name="description"
+      content="Apply to become a seasonal volunteer and help support community nature access programs at Fun Zoo."
+    />
+    <meta name="author" content="Ugwuanyi Chineme Charles" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <meta
+      name="description"
+      content="This is the volunteer page for the Fun Zoo
+    website."
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Become a Volunteer</h1>
+      <p class="tagline">Support Accessible Community Nature Programs</p>
+    </header>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="explore.html" class="nav-link">Explore Animals</a>
+      <a href="volunteer.html" class="nav-link active">Join Us</a>
+    </nav>
+
+    <main class="content-wrapper">
+      <section class="info-card">
+        <h2>Application Form</h2>
+        <p class="form-intro">
+          Fill out the standards-compliant fields below to apply for our
+          seasonal wildlife educational team program.
+        </p>
+
+        <form action="#" method="GET" class="application-form">
+          <div class="form-group">
+            <label id="lbl-name" for="txt-name">Full Name:</label>
+            <input
+              type="text"
+              id="txt-name"
+              name="userName"
+              required
+              placeholder="e.g. Input a name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="lbl-email" for="txt-email">Email Address:</label>
+            <input
+              type="email"
+              id="txt-email"
+              name="userEmail"
+              required
+              placeholder="e.g. anything@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="lbl-interest" for="sel-interest"
+              >Primary Area of Interest:</label
+            >
+            <div class="select-wrapper">
+              <select id="sel-interest" name="userInterest">
+                <option value="education">Community Nature Tours</option>
+                <option value="habitat">Habitat Trail Maintenance</option>
+                <option value="events">Special Seasonal Guest Events</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label id="lbl-notes" for="txt-notes"
+              >Why do you want to join Fun Zoo?</label
+            >
+            <textarea
+              id="txt-notes"
+              name="userNotes"
+              rows="5"
+              placeholder="Share your love for nature and community spaces..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Submit Application</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2026 Fun Zoo Community Hub. Crafted for educational accessibility
+        goals.
+      </p>
+    </footer>
+  </body>
+</html>
